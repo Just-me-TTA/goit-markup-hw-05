@@ -612,6 +612,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-w">
         <button type="button" class="modal-btn" data-modal-close>
@@ -624,7 +625,7 @@
 
         <form class="order-form">
           <div class="order-form-block">
-            <label for="user-name" class="modal-label">Name </label>
+            <label for="user-name" class="modal-label">Name</label>
             <div class="order-form-area">
               <input
                 type="text"
@@ -637,8 +638,10 @@
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
+          </div>
 
-            <label for="user-phone" class="modal-label">Phone </label>
+          <div class="order-form-block">
+            <label for="user-phone" class="modal-label">Phone</label>
             <div class="order-form-area">
               <input
                 type="tel"
@@ -651,8 +654,10 @@
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
+          </div>
 
-            <label for="user-mail" class="modal-label">Email </label>
+          <div class="order-form-block">
+            <label for="user-mail" class="modal-label">Email</label>
             <div class="order-form-area">
               <input
                 type="email"
@@ -664,21 +669,23 @@
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-
-            <div class="order-form-comment">
-              <label for="user-comment" class="modal-label">Comment </label>
-
-              <textarea
-                class="modal-comment-block"
-                name="user-comment"
-                id="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-
-            <checkbox></checkbox>
-            <button type="submit">Send</button>
           </div>
+
+          <div class="order-form-comment">
+            <label for="user-comment" class="modal-label">Comment </label>
+
+            <textarea
+              class="modal-comment-block"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div>
+            <input type="checkbox" value="true" name="user-privacy" />
+          </div>
+
+          <button type="submit">Send</button>
         </form>
       </div>
     </div>
