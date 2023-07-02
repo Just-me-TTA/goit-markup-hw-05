@@ -681,11 +681,27 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div>
-            <input type="checkbox" value="true" name="user-privacy" />
+          <div class="privacy-check-block">
+            <input
+              id="user-privacy"
+              class="visually-hidden privacy-input"
+              type="checkbox"
+              value="true"
+              name="user-privacy"
+              id="user-privacy"
+            />
+            <label class="privacy-label" for="user-privacy">
+              <span class="privacy-label-alt">
+                <svg class="icon-check" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="" class="policy"> Privacy Policy</a>
+            </label>
           </div>
 
-          <button type="submit">Send</button>
+          <button type="submit" class="modal-send-btn">Send</button>
         </form>
       </div>
     </div>
